@@ -1,0 +1,65 @@
+.menu-card {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  cursor: pointer;
+  position: relative;
+  padding: 20px; /* Memberikan padding untuk memberi ruang di dalam kartu */
+  display: flex;
+  flex-direction: column; /* Menyusun konten secara vertikal */
+  justify-content: flex-start; /* Mengatur agar konten berada di atas */
+  height: 100%; /* Pastikan kartu memiliki tinggi penuh */
+}
+
+.menu-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.menu-card:active {
+  transform: translateY(4px);
+  box-shadow: none;
+}
+
+.menu-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  margin: 0 auto;
+}
+
+.menu-card:hover .menu-img {
+  transform: scale(1.1);
+}
+
+.menu-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  margin-top: 15px; /* Memberikan jarak antara gambar dan judul */
+}
+
+.menu-card:hover .menu-title {
+  color: #007bff;
+}
+
+.menu-description {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px; /* Menambahkan jarak antara judul dan deskripsi */
+}
+
+.menu-price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white !important;
+  margin-top: 15px; /* Memberikan jarak antara deskripsi dan harga */
+  margin-bottom: 0; /* Menghapus margin bawah agar tidak ada jarak berlebih */
+}
+
+/* Efek hover untuk overlay */
+.menu-card:hover .menu-overlay {
+  display: block;
+}

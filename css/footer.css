@@ -1,0 +1,23 @@
+/* footer */
+.reservation;
+.page-header;
+.offer;
+.footer {
+  background: linear-gradient(
+    rgba(51, 33, 29, 0.9),
+    rgba(51, 33, 29, 0.9),
+    url(../img//bg.jpg)
+  );
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* back to top */
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 30px;
+  bottom: 30px;
+  z-index: 1;
+  animation: action 1s infinite alternate;
+}

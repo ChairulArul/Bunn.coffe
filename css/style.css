@@ -1,0 +1,240 @@
+/* Header start */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+.font-weight-bold {
+  font-weight: 460 !important;
+}
+h3,
+h4,
+.font-weight-normal {
+  font-weight: 400 !important;
+}
+.btn-square {
+  width: 36px;
+  height: 36px;
+}
+.btn-sm-square {
+  width: 28px;
+  height: 28px;
+}
+.btn-lg-square {
+  width: 46px;
+  height: 46px;
+}
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+.container-fluid.nav-bar,
+.nav-bar.container-sm,
+.nav-bar.container-md,
+.nav-bar.container-lg,
+.nav-bar.container-xl {
+  position: absolute;
+  z-index: 9;
+}
+@media (min-width: 991.98px) {
+  .container-fluid.nav-bar,
+  .nav-bar.container-sm,
+  .nav-bar.container-md;
+  .nav-bar.container-lg,
+  .nav-bar.container-xl {
+    position: relative;
+    background: #33211d;
+  }
+}
+.navbar-dark .navbar-nav .nav-link {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: bold;
+  letter-spacing: 1px;
+  color: #fffbf2;
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:active {
+  color: #da9f5b;
+}
+
+.overlay-top::before,
+.overlay-bottom::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 15px;
+  left: 0;
+  z-index: 1;
+}
+.overlay-top::before {
+  top: -1px;
+  background: url(../img/overlay-top.png);
+}
+.overlay-top::after {
+  bottom: -1px;
+  background: url(../img/overlay-bottom.png);
+}
+.carousel-caption {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(51, 33, 29, 0.7);
+  z-index: 1;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 3vw; /* Ukuran font relatif terhadap layar */
+}
+@media (max-width: 576px) {
+  .carousel-caption {
+    font-size: 5vw; /* Ukuran font lebih kecil di layar kecil */
+    padding: 10px; /* Padding yang lebih kecil */
+  }
+}
+
+.carousel-caption h1 {
+  font-size: 3vw;
+}
+
+.carousel-caption p {
+  font-size: 1.5vw;
+}
+
+/* Section Start */
+.section-title {
+  position: relative;
+  padding: 135px 0 35px 0;
+  text-align: center;
+}
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100px;
+  top: 0;
+  left: 50%;
+  margin-left: 1px;
+  background: #da9f5b;
+}
+
+/* styling for menu */
+.menu-card {
+  background: linear-gradient(135deg, #f8f9fa, #f0f0f0);
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.menu-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.menu-card:active {
+  transform: scale(0.98);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.menu-card:hover .menu-overlay {
+  opacity: 1;
+}
+
+.menu-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 3px solid #e0e0e0;
+  transition: transform 0.3s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.menu-card:hover .menu-img {
+  transform: rotate(-5deg) scale(1.1);
+}
+
+.menu-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 15px;
+  z-index: 2;
+  position: relative;
+}
+
+.menu-description {
+  font-size: 15px;
+  color: #666;
+  margin: 10px 0;
+  z-index: 2;
+  position: relative;
+}
+
+.menu-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: brown !important;
+  padding: 10px 20px !important;
+  border-radius: 5px;
+  margin-top: 10px;
+  min-width: 100px;
+  z-index: 2;
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+.menu-card:hover .menu-price {
+  background: linear-gradient(45deg, #0056b3, #003f7f);
+}
+
+/* end styling menu */
+
+/* service */
+.service-icon {
+  margin-right: 15px;
+  width: 45px;
+  height: 45px;
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 45px;
+  color: #33211d;
+  background: #da9f5b;
+}
+
+.contact-form .help-block ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

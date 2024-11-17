@@ -1,0 +1,54 @@
+#blog-carousel {
+  position: relative;
+}
+
+#blog-carousel img {
+  opacity: 1 !important; /* Pastikan gambar terlihat jelas */
+}
+
+#blog-carousel .carousel-inner::before {
+  content: none; /* Menghapus efek overlay jika menggunakan pseudo-element */
+}
+
+.overlay-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Overlay hitam */
+}
+#blog-carousel .carousel-caption {
+  background: none;
+  color: white; /* Sesuaikan dengan kebutuhan */
+  text-shadow: none; /* Hilangkan efek bayangan */
+}
+#blog-carousel .carousel-inner::before,
+#blog-carousel .carousel-inner::after {
+  content: none !important;
+  background: none !important;
+}
+#blog-carousel img {
+  opacity: 1 !important; /* Pastikan gambar terlihat jelas */
+}
+#blog-carousel {
+  background: none !important;
+}
+
+#blog-carousel .carousel-item {
+  position: relative;
+  background: none !important;
+}
+
+#blog-carousel .carousel-caption {
+  background: none !important;
+  text-shadow: none !important; /* Hilangkan bayangan */
+}
+#blog-carousel .overlay-bottom {
+  background: none !important;
+  opacity: 1 !important;
+}
+#blog-carousel * {
+  background: none !important;
+  border: none !important; /* Lihat elemen mana yang masih menghalangi */
+}
