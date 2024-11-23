@@ -10,6 +10,7 @@
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="icon" href="img/logo.jpeg" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
@@ -33,14 +34,59 @@
     <!-- <link rel="stylesheet" href="css/style.css" /> -->
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
     <title>Bunn.Gayo</title>
+
+    <!-- INLINE CSS -->
+    <style>
+      /* Default font size untuk desktop */
+
+      /* Responsif untuk tablet */
+      @media (max-width: 992px) {
+        .carousel-text-main {
+          font-size: 2.5rem;
+        }
+        .carousel-text-primary {
+          font-size: 1.25rem;
+        }
+        .carousel-text-sub {
+          font-size: 0.9rem;
+        }
+      }
+
+      /* Responsif untuk smartphone */
+      @media (max-width: 768px) {
+        .carousel-text-main {
+          font-size: 2rem;
+        }
+        .carousel-text-primary {
+          font-size: 1rem;
+        }
+        .carousel-text-sub {
+          font-size: 0.8rem;
+        }
+      }
+
+      /* Responsif untuk layar sangat kecil */
+      @media (max-width: 576px) {
+        .carousel-text-main {
+          font-size: 1.5rem;
+        }
+        .carousel-text-primary {
+          font-size: 0.9rem;
+        }
+        .carousel-text-sub {
+          font-size: 0.75rem;
+        }
+      }
+    </style>
   </head>
-  <body>
+  <body style="background-color: #f9f3d4">
     <!-- Navbar Start -->
     <div class="container-fluid p-0 nav-bar">
       <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
         <a href="index.html" class="navbar-brand px-lg-4 m-0">
-          <h1 class="m-0 display-4 text-capitalize text-white">Bunn.Coffee</h1>
+          <h1 class="m-0 display-4 text-capitalize text-white">Bunn.Gayo</h1>
         </a>
         <button
           type="button"
@@ -59,7 +105,7 @@
             <a href="#about" class="nav-item nav-link">About</a>
             <a href="#service" class="nav-item nav-link">Service</a>
             <a href="#menu" class="nav-item nav-link">Menu</a>
-            <a href="#reserve" class="nav-item nav-link">Reservation</a>
+            <!-- <a href="#reserve" class="nav-item nav-link">Reservation</a> -->
             <a href="#contact" class="nav-item nav-link">Contact</a>
           </div>
         </div>
@@ -80,11 +126,18 @@
             <div
               class="carousel-caption d-flex flex-column align-items-center justify-content-center"
             >
-              <h2 class="text-primary font-weight-medium m-0">
-                We Have Been serving
+              <h2
+                class="carousel-text-primary text-primary font-weight-small m-0"
+              >
+                Provide High Quality
               </h2>
-              <h1 class="display-1 text-white m-0">COFFEE</h1>
-              <h2 class="text-white m-0">SINCE 2024</h2>
+              <h1 class="carousel-text-main display-1 text-white m-0">
+                COFFEE BEANS
+              </h1>
+              <b class="carousel-text-sub mb-3" style="font-size: 12px">
+                Exportable directly to any country in the World</b
+              >
+              <h2 class="carousel-text-secondary text-white m-0">SINCE 2024</h2>
             </div>
           </div>
           <div class="carousel-item">
@@ -92,28 +145,21 @@
             <div
               class="carousel-caption d-flex flex-column align-items-center justify-content-center"
             >
-              <h2 class="text-primary font-weight-medium m-0">
-                We Have Been Serving
+              <h2
+                class="carousel-text-primary text-primary font-weight-medium m-0"
+              >
+                Provide High Quality
               </h2>
-              <h1 class="display-1 text-white m-0">COFFEE</h1>
-              <h2 class="text-white m-0">SINCE 2024</h2>
+              <h1 class="carousel-text-main display-1 text-white m-0">
+                COFFEE BEANS
+              </h1>
+              <b class="carousel-text-sub mb-3" style="font-size: 12px">
+                Exportable directly to any country in the World</b
+              >
+              <h2 class="carousel-text-secondary text-white m-0">SINCE 2024</h2>
             </div>
           </div>
         </div>
-        <a
-          href="#blog-carousel"
-          class="carousel-control-prev"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a
-          href="#blog-carousel"
-          class="carousel-control-next"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon"></span>
-        </a>
       </div>
     </div>
     <!-- Carousel End -->
@@ -129,17 +175,18 @@
         </div>
         <div class="row">
           <div class="col-lg-4 py-0 py-lg-5">
-            <h1 class="mb-3">Our Story</h1>
-            <h5 class="mb-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </h5>
+            <h1 class="mb-3">About Us</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-              veritatis voluptatem dolorum. Consectetur est laudantium nesciunt
-              adipisci voluptatem error reiciendis!
+              Bunn Gayo is a trusted coffee supplier specializing in the rich,
+              diverse flavors of Indonesia's most renowned coffee regions: Gayo,
+              Mandheling, and Lintong. Established with a passion for quality
+              and sustainability, we are dedicated to bringing the finest
+              Arabica beans from the highlands of Sumatra to coffee enthusiasts
+              worldwide. At the heart of our operations is a commitment to
+              preserving the heritage and uniqueness of Indonesian coffee.
             </p>
             <a
-              href="#"
+              href="about.html"
               class="btn btn-secondary font-weight-bold py-2 px-4 mt-2"
               >Learn More</a
             >
@@ -147,7 +194,7 @@
           <div class="col-lg-4 py-5 py-lg-0" style="min-height: 500px">
             <div class="position-relative h-100">
               <img
-                src="img/about.png"
+                src="img/coffe.png"
                 alt=""
                 class="position-absolute w-100 h-100"
                 style="object-fit: cover"
@@ -155,26 +202,31 @@
             </div>
           </div>
           <div class="col-lg-4 py-0 py-lg-5">
-            <h1 class="mb-3">Our Vision</h1>
+            <h1 class="mb-1">Vision & Mission</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              corporis harum, veniam cum qui nobis? Hic eaque mollitia est ea.
+              To be a global leader in supplying authentic, high-quality
+              Indonesian coffee while championing sustainability and ethical
+              trade.
             </p>
-            <h5 class="mb-3">
-              <i class="fa fa-check text-primary mr-3"></i>Lorem, ipsum dolor.
-            </h5>
-            <h5 class="mb-3">
-              <i class="fa fa-check text-primary mr-3"></i>Lorem, ipsum dolor.
-            </h5>
-            <h5 class="mb-3">
-              <i class="fa fa-check text-primary mr-3"></i>Lorem, ipsum dolor.
-            </h5>
-            <a
+            <p class="mb-2">
+              <i class="fa fa-check text-primary mr-3"></i>Deliver premium
+              coffee that showcases Indonesia’s unique coffee heritage.
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-check text-primary mr-3"></i>Foster sustainable
+              farming practices and empower local coffee-growing communities.
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-check text-primary mr-3"></i>Build long-lasting
+              relationships with clients through exceptional products and
+              services.
+            </p>
+            <!-- <a
               href="#"
               class="btn btn-primary font font-weight-bold py-2 px-4 mt-2"
             >
               Learn More
-            </a>
+            </a> -->
           </div>
         </div>
       </div>
@@ -187,21 +239,25 @@
           <h4 class="text-primary text-uppercase" style="letter-spacing: 5px">
             Our Services
           </h4>
+          <h5>serving retail and wholesale sellers.</h5>
           <h1 class="display-4">Fresh & Organic Beans</h1>
         </div>
         <div class="row">
           <div class="col-lg-6 mb-5">
             <div class="row align-items-center">
               <div class="col-sm-5">
-                <img src="img/service-1.jpg" class="img-fluid mb-3 mb-sm-0" />
+                <img
+                  src="img/FastestFoodDelivery - 1.png"
+                  class="img-fluid mb-3 mb-sm-0"
+                />
               </div>
               <div class="col-sm-7">
                 <h4>
                   <i class="fa fa-truck service-icon"></i>Fastest Door Delivery
                 </h4>
                 <p class="m-0">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Debitis ipsum atque corrupti vel. Deserunt, quos!
+                  Premium Bunn Gayo delivered fresh to your doorstep with speed
+                  and reliability.
                 </p>
               </div>
             </div>
@@ -220,8 +276,8 @@
                   <i class="fa fa-coffee service-icon"></i>Fresh Coffe Beans
                 </h4>
                 <p class="m-0">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Debitis ipsum atque corrupti vel. Deserunt, quos!
+                  Bunn Gayo sourced and packed to preserve their natural
+                  freshness and aroma.
                 </p>
               </div>
             </div>
@@ -230,7 +286,7 @@
             <div class="row align-items-center">
               <div class="col-sm-5">
                 <img
-                  src="img/service-3.jpg"
+                  src="img/BestQualityCoffeeE.png"
                   alt=""
                   class="img-fluid mb-3 mb-sm-0"
                 />
@@ -240,8 +296,9 @@
                   <i class="fa fa-award service-icon"></i>Best Quality Coffe
                 </h4>
                 <p class="m-0">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Debitis ipsum atque corrupti vel. Deserunt, quos!
+                  Handpicked Bunn Gayo with rich flavor and aroma, ensuring
+                  unmatched quality in every cup—now available exclusively
+                  at Coffeenatics.
                 </p>
               </div>
             </div>
@@ -250,18 +307,16 @@
             <div class="row align-items-center">
               <div class="col-sm-5">
                 <img
-                  src="img/service-4.jpg"
+                  src="img/ONLINE  BOOKING.png"
                   alt=""
                   class="img-fluid mb-3 mb-sm-0"
                 />
               </div>
               <div class="col-sm-7">
-                <h4>
-                  <i class="fa fa-table service-icon"></i>Online Table Booking
-                </h4>
+                <h4><i class="fa fa-table service-icon"></i>Online Booking</h4>
                 <p class="m-0">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Debitis ipsum atque corrupti vel. Deserunt, quos!
+                  Order your Bunn Gayo coffee beans easily anytime, anywhere
+                  with our convenient online platform.
                 </p>
               </div>
             </div>
@@ -270,39 +325,6 @@
       </div>
     </div>
     <!-- Service End -->
-    <!-- Offer Start -->
-    <div
-      class="offer container-fluid my-5 py-5 text-center position-relative overlay-top overlay-bottom"
-    >
-      <div class="container py-5">
-        <h1 class="display-5 text-primary mt-3">50% Off</h1>
-        <h1 class="text-white mb-3">Sunday Special offer</h1>
-        <h4 class="text-white font-weight-normal mb-4 pb-3">
-          Only for sunday 1st Dec to 30th Dec 2024
-        </h4>
-        <form action="" class="form-inline justify-content-center mb-4">
-          <div class="input-group">
-            <input
-              type="text"
-              name=""
-              id=""
-              class="form-control p-4"
-              placeholder="Enter your email"
-              style="height: 60px"
-            />
-            <div class="input-group-append">
-              <button
-                class="btn btn-primary font-weight-bold px-4"
-                type="submit"
-              >
-                Sign Up
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-    <!-- Offer End -->
     <!-- menu start -->
     <div class="container-fluid pt-5" id="menu">
       <div class="container">
@@ -314,7 +336,7 @@
         </div>
         <div class="row">
           <!-- Product 1 -->
-          <div class="col-lg-4 col-md-6 mb-4">
+          <div class="col-lg-4 col-md-6 mb-4" id="menu1">
             <div
               class="menu-card text-center p-4 position-relative"
               tabindex="0"
@@ -333,12 +355,15 @@
               <p class="menu-description mt-3 text-muted">
                 Rich and bold flavors of Aceh Gayo.
               </p>
-              <!-- Harga di bawah deskripsi -->
-              <h5 class="menu-price text-primary font-weight-bold mt-3">50k</h5>
+              <h5
+                class="menu-price text-primary font-weight-bold mt-3 bi bi-star-fill"
+              >
+                <i class="fa fa-star"></i>
+              </h5>
             </div>
           </div>
           <!-- Product 2 -->
-          <div class="col-lg-4 col-md-6 mb-4">
+          <div class="col-lg-4 col-md-6 mb-4" id="menu2">
             <div
               class="menu-card text-center p-4 position-relative"
               tabindex="0"
@@ -357,12 +382,13 @@
               <p class="menu-description mt-3 text-muted">
                 Smooth and aromatic specialty beans.
               </p>
-              <!-- Harga di bawah deskripsi -->
-              <h5 class="menu-price text-primary font-weight-bold mt-3">50k</h5>
+              <h5 class="menu-price text-primary font-weight-bold mt-3">
+                <i class="fa fa-star"></i>
+              </h5>
             </div>
           </div>
           <!-- Product 3 -->
-          <div class="col-lg-4 col-md-6 mb-4">
+          <div class="col-lg-4 col-md-6 mb-4" id="menu3">
             <div
               class="menu-card text-center p-4 position-relative"
               tabindex="0"
@@ -382,7 +408,9 @@
                 Exquisite taste with a nutty finish.
               </p>
               <!-- Harga di bawah deskripsi -->
-              <h5 class="menu-price text-primary font-weight-bold mt-3">50k</h5>
+              <h5 class="menu-price text-primary font-weight-bold mt-3">
+                <i class="fa fa-star"></i>
+              </h5>
             </div>
           </div>
         </div>
@@ -407,12 +435,14 @@
           <div class="col-sm text-center mb-3">
             <i class="fa fa-2x fa-phone-alt mb-3 text-primary"></i>
             <h4 class="font-weight">Contact Me</h4>
-            <p>+62 815‑3157‑471</p>
+            <p>+62 812-6072-073</p>
           </div>
           <div class="col-sm-4 text-center mb-3">
-            <i class="fa fa-2x fa-envelope mb-3 text-primary"></i>
+            <i class="fa fa-2x fa-envelope mb-3 text-primary"
+              ><a href=""></a
+            ></i>
             <h4 class="font-weight">Send Me Message</h4>
-            <p>Info@gmail.com</p>
+            <p>bunn.gayo@gmail.com</p>
           </div>
         </div>
 
@@ -489,12 +519,13 @@
       </div>
     </div>
     <!-- contact end -->
-    <!-- footer start -->
+    <!-- Footer Start -->
     <div
       class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top"
     >
       <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
-        <div class="col-lg-3 col-md-6 mb-5">
+        <!-- Kolom 1: Get In Touch -->
+        <div class="col-md-6 mb-5">
           <h2
             class="text-white text-uppercase mb-4"
             style="letter-spacing: 3px"
@@ -505,17 +536,16 @@
             <i class="fa fa-map-marker-alt mr-2"></i>Syailendra Street Number 20
             Medan - North Sumatra
           </p>
-          <p><i class="fa fa-phone-alt mr-2"></i>+62 815‑3157‑471</p>
-          <p><i class="fa fa-envelope mr-2"></i>info@gmail.com</p>
+          <p><i class="fa fa-phone-alt mr-2"></i>+62 812-6072-073</p>
+          <p><i class="fa fa-envelope mr-2"></i>bunn.gayo@gmail.com</p>
         </div>
-        <div class="col-lg-3 col-md-6 mb-5">
+
+        <!-- Kolom 2: Follow Us -->
+        <div class="col-md-6 mb-5">
           <h4 class="text-white text-uppercase" style="letter-spacing: 3px">
             Follow Us
           </h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam,
-            autem?
-          </p>
+          <p>For further information, please contact the contact below</p>
           <div class="d-flex justify-content-start">
             <a href="" class="btn btn-lg btn-outline-light btn-lg-square mr-2"
               ><i class="fab fa-twitter"></i
@@ -526,53 +556,11 @@
             <a href="#" class="btn btn-lg btn-outline-light btn-lg-square mr-2"
               ><i class="fab fa-linkedin-in"></i
             ></a>
-            <a href="#" class="btn btn-lg btn-outline-light btn-lg-square mr-2"
+            <a
+              href="https://www.instagram.com/bunn.gayo/"
+              class="btn btn-lg btn-outline-light btn-lg-square mr-2"
               ><i class="fab fa-instagram"></i
             ></a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h4
-            class="text-white text-uppercase mb-4"
-            style="letter-spacing: 3px"
-          >
-            Open Hours
-          </h4>
-          <div>
-            <h6 class="text-white text-uppercase">monday - Friday</h6>
-            <p class="">08:00 AM - 08:00 PM</p>
-            <h6 class="text-white text-uppercase">monday - Friday</h6>
-            <h6 class="text-white text-uppercase"></h6>
-            <p class="">02:00 AM - 08:00 PM</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h4
-            class="text-white text-uppercase mb-4"
-            style="letter-spacing: 3px"
-          >
-            Newsletter
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
-            consequatur.
-          </p>
-          <div class="w-100">
-            <div class="input-group">
-              <input
-                type="text"
-                name=""
-                id=""
-                class="form-control border-light"
-                style="padding: 25px"
-                placeholder="Your Email"
-              />
-              <div class="input-group-append">
-                <button class="btn btn-primary font-weight-bold px-3">
-                  Sign Up
-                </button>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -589,12 +577,13 @@
         </p>
       </div>
     </div>
-    <!-- footer end -->
+    <!-- Footer End -->
 
     <!-- back to top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
       ><i class="fa fa-angle-double-up"></i
     ></a>
+
     <!-- JavaScript Libraries -->
     <script src="js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -604,5 +593,8 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+
+    <!-- javascript link to -->
+    <script src="Menu/menu.js"></script>
   </body>
 </html>
